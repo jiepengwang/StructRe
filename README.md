@@ -1,5 +1,5 @@
 # StructRe: Rewriting for Structured Shape Modeling
-In this paper, we propose a robust and generalizable approach for structured shape modeling, by using local and probabilistic structure rewriting. Our approach is a unified framework for structured reconstruction, structured completion and structured generation.
+In this paper, we propose a robust and generalizable approach for structured shape modeling, by using local and probabilistic structure rewriting. This approach presents a unified framework for structured reconstruction, completion and generation.
 
 
 ![](./doc/teaser.png)
