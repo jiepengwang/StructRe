@@ -1,0 +1,222 @@
+<!--This project page is borrowed from Lingjie Liu's project page -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>StructRe: Rewriting for Structured Shape Modeling </title>
+	
+	<!-- Meta tags for Zotero grab citation -->
+	<meta name="citation_title" content="StructRe: Rewriting for Structured Shape Modeling">
+	<meta name="citation_author" content="Wang, Jiepeng">
+	<meta name="citation_author" content="Pan, Hao">
+	<meta name="citation_author" content="Liu, Yang">
+	<meta name="citation_author" content="Tong, Xin">
+	<meta name="citation_author" content="Komura, Taku">
+	<meta name="citation_author" content="Wang, Wenping">
+	<meta name="citation_publication_date" content="2023">
+	<meta name="citation_conference_title" content="arxiv">
+	<meta name="citation_pdf_url" content="https:">
+
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="
+		Man-made 3D shapes are naturally organized in parts and hierarchies; such structures provide important constraints for shape reconstruction and generation. Modeling shape structures is difficult, because there can be multiple hierarchies for a given shape, causing ambiguity, and across different categories the shape structures are correlated with semantics, limiting generalization. We present StructRe, a structure rewriting system, as a novel approach to structured shape modeling. Given a 3D object represented by points and components, StructRe can rewrite it upward into more concise structures, or downward into more detailed structures; by iterating the rewriting process, hierarchies are obtained. Such a localized rewriting process enables probabilistic modeling of ambiguous structures and robust generalization across object categories. We train StructRe on PartNet data and show its generalization to cross-category and multiple object hierarchies, and test its extension to ShapeNet. We also demonstrate the benefits of probabilistic and generalizable structure modeling for shape reconstruction, generation and editing tasks.
+		">
+	<link rel="author" href="https://jiepengwang.github.io/">
+
+
+	<!-- Fonts and stuff -->
+	<link href="./images/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./images/project.css" media="screen">
+	<link rel="stylesheet" type="text/css" media="screen" href="./images/iconize.css">
+	<script src="./images/prettify.js.download"></script>
+</head>
+
+<body>
+	<div id="content">
+		<div id="content-inner">
+			<div class="section logos" style="text-align:center">
+				<a href="https://www.hku.hk/" target="_blank"><img src="./images/hku_logo.jpg" height="35" border="0"></a>
+				<a href="https://www.msra.cn/" target="_blank"><img src="./images/logo_ms.png" height="30" border="0"></a>				
+				<a href="https://www.tamu.edu/" target="_blank"><img src="./images/Texas-AM-University_logo.jpg" height="35" ="0"=""></a>
+			</div>
+
+			<div class="section head">
+
+				<h1>StructRe: Rewriting for Structured Shape Modeling</h1>
+
+				<div class="authors">
+					<a href="https://jiepengwang.github.io" target="_blank">Jiepeng Wang</a><sup> 1,2</sup>&nbsp;&nbsp;
+					<a href="https://haopan.github.io" target="_blank">Hao Pan</a><sup> 2</sup>&nbsp;&nbsp;
+					<a href="https://xueyuhanlang.github.io" target="_blank">Yang Liu</a><sup> 2</sup>&nbsp;&nbsp;
+					
+					<a href="https://www.microsoft.com/en-us/research/people/xtong/" target="_blank">Xin Tong</a><sup>2</sup>&nbsp;&nbsp;
+					<a href="https://www.cs.hku.hk/index.php/people/academic-staff/taku">Taku Komura</a><sup> 1</sup>&nbsp;&nbsp;
+					<a href="https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html">Wenping Wang</a><sup> 3</sup>&nbsp;&nbsp;
+				</div>
+
+				<div class="affiliations">
+					<sup>1</sup><a href="https://www.hku.hk/" target="_blank">The University of Hong Kong</a>&nbsp;&nbsp;
+					<sup>2</sup><a href="https://www.msra.cn/" target="_blank">Microsoft Reasearch Asia</a>&nbsp;&nbsp;
+					<sup>3</sup><a href="https://www.tamu.edu/" target="_blank">Texas A&amp;M University</a>&nbsp;&nbsp;
+				</div>
+
+				<div class="section downloads">
+					<!--<h2>Downloads</h2>-->
+					<center>
+						<ul>
+							<li class="grid">
+								<div class="griditem">
+									<a href="https://arxiv.org/abs/2311.17510" target="_blank" class="imageLink"><img src="./images/pdf.png"></a><br>
+									<a href="https://arxiv.org/abs/2311.17510">Paper</a>
+								</div>
+							</li>
+							<li class="grid">
+								<div class="griditem">
+									<a href="https://github.com/jiepengwang/StuctRe" target="_blank" class="imageLink"></a><img src="./images/data_ico.png"><br>
+									<a href="https://github.com/jiepengwang/StructRe">Code</a>
+								</div>
+							</li>
+						</ul>
+					</center>
+				</div>
+			</div>
+
+
+			<div class="section abstract">
+				<h2>Abstract</h2><br>
+				<div class="row" style="margin-bottom:5px">
+					<div class="col" style="text-align:center">
+						<img class="thumbnail" src="./images/teaser.png" style="width:90%; margin-bottom:20px">
+
+					</div>
+
+				</div>
+
+				<p class="text-justify">
+					Man-made 3D shapes are naturally organized in parts and hierarchies; such structures provide important constraints for shape reconstruction and generation. Modeling shape structures is difficult, because there can be multiple hierarchies for a given shape, causing ambiguity, and across different categories the shape structures are correlated with semantics, limiting generalization. We present StructRe, a structure rewriting system, as a novel approach to structured shape modeling. Given a 3D object represented by points and components, StructRe can rewrite it upward into more concise structures, or downward into more detailed structures; by iterating the rewriting process, hierarchies are obtained. Such a localized rewriting process enables probabilistic modeling of ambiguous structures and robust generalization across object categories. We train StructRe on PartNet data and show its generalization to cross-category and multiple object hierarchies, and test its extension to ShapeNet. We also demonstrate the benefits of probabilistic and generalizable structure modeling for shape reconstruction, generation and editing tasks.
+				</p>
+
+			</div>
+
+			<div class="section abstract">
+				<h2>Introduction</h2>
+				
+				<div class="row" style="margin-bottom:5px">
+					<div class="col" style="text-align:center">
+						<img class="thumbnail" src="./images/method_overview.png" style="width:90%; margin-bottom:20px">
+					</div>
+				</div>
+				
+				<p class="text-justify">
+					In this paper, we propose a robust and generalizable approach for structured shape modeling, by using local and probabilistic structure rewriting. The rewriting system transits locally between two levels of part decompositions within a hierarchy, therefore getting rid of categorical templates and generalizing across categories. The rewriting system also allows probabilistic sampling of different transitions that are equally plausible, therefore resolving the ambiguity with diverse structures.  Specifically, we first build a unified latent space of all parts and shapes across categories. Given the latent encoding, we learn the rewriting model that maps a set of input parts into another set of output parts, with iterative decoding at the output side to sample multiple solutions according to probability.			
+				</p>
+			</div>
+
+
+
+			
+			<div class="section abstract">
+				<h2>Structured reconstruction and completion</h2><br>
+				<div class="row" style="margin-bottom:5px">
+					<p class="text-justify">
+						In this part, we show our model's performance on structured reconstruction on complete point cloud input (a) and structured completion on partial point cloud via virtual scanning (b). 
+						Compared with the baseline methods, our method can generate more regularized and high quality results via local rewriting.
+					</p>
+
+					<div class="col" style="text-align:center">
+						<img class="thumbnail" src="./images/structure_recon.png" style="width:90%; margin-bottom:20px">
+					</div>
+
+				</div>
+			</div>
+
+			<div class="section abstract">
+
+				<h2>Structured generation</h2><br>
+				<div class="row" style="margin-bottom:5px">
+					<p class="text-justify">
+						For each input point cloud, we encode it into a root node and apply the downward rewriting process interleaved
+						with shape code perturbation to generate three different shapes in rows. 
+					</p>
+				</div>
+
+				<div class="col" style="text-align:center">
+					<img class="thumbnail" src="./images/structure_gen_v2.png" style="width:90%; margin-bottom:20px">
+				</div>
+			</div>
+
+			<div class="section abstract">
+				<h2>Result analysis</h2><br>
+				<div class="row" style="margin-bottom:5px">
+					<p class="text-justify">
+						In this part we show the generalization ability of the trained network through its performance on small categories (a) of PartNet and on multiple objects (b).
+						We also show the effect of probabilistic sampling for modeling multiple structures (c).
+					</p>
+				</div>
+
+				<div class="col" style="text-align:center">
+					<img class="thumbnail" src="./images/result_analysis.png" style="width:90%; margin-bottom:20px">
+				</div>
+			</div>
+
+
+			<div class="section abstract">
+
+				<h2>ShapeNet extension</h2><br>
+				<div class="row" style="margin-bottom:5px">
+					<p class="text-justify">
+						In this part, we show the model's entension to ShapeNet data, where it infers meaningful structures (a) and leaf nodes (b) in zero-shot and also show its capability to new data via few-shot tunning.
+					</p>
+				</div>
+
+				<div class="col" style="text-align:center">
+					<img class="thumbnail" src="./images/shapenet_ext.png" style="width:90%; margin-bottom:20px">
+				</div>
+			</div>
+
+
+			<div class="section abstract">
+				<h2>Applications</h2><br>
+				<div class="row" style="margin-bottom:5px">
+					<p class="text-justify">
+						Modeling applications enabled by rewriting. 
+						(a) reconstruction plus variation. Given partial scans, our rewriting model parses them into structured hierarchies, and explores variations by downward rewriting plus shape perturbation. 
+						(b) part editing. By selecting parts at proper levels for objects of different categories, swapping them, and rewriting upward to regularize the editing, novel objects are obtained.
+						(c) shape vectorization. After a shape is parsed into parts, nearest parts with compact polygonal meshes can be retrieved from a database to vectorize the shape.			
+					</p>
+				</div>
+
+				<div class="col" style="text-align:center">
+					<img class="thumbnail" src="./images/app.png" style="width:90%; margin-bottom:20px">
+				</div>
+			</div>
+
+			<div class="section list">
+				<h2>Citation</h2>
+				<div class="section bibtex">
+					<pre>@article{wang2023structre,
+    title={StructRe: Rewriting for Structured Shape Modeling}, 
+    author={Wang, Jiepeng and Pan, Hao and Liu, Yang and Tong, Xin and Komura, Taku and Wang, Wenping},
+    journal={arXiv preprint arXiv:2311.17510},
+    year={2023}
+}
+				</pre></div>
+			</div>
+						
+			
+			<div class="section">
+				<hr class="smooth">
+				This page is <a href="http://www.zotero.org/" target="_blank">Zotero</a> translator friendly. Page last updated 
+				<script type="text/javascript">
+					var m = "This page was last updated: " + document.lastModified;
+					var p = m.length - 9;
+					document.writeln("<left>");
+					document.write(m.substring(p, 0) + ".");
+					document.writeln("</left>");
+				</script>
+				<!-- <a href="https://www.mpi-inf.mpg.de/imprint/">Imprint</a>. <a href="https://data-protection.mpi-klsb.mpg.de/inf/gvv.mpi-inf.mpg.de/projects/">Data Protection</a>. -->
+
+			</div>
+		</div>
+	</div>
+
+</div></body></html>
