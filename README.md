@@ -1,7 +1,7 @@
 # StructRe: Rewriting for Structured Shape Modeling
 
 ### Transactions on Graphics
-(Provisionally accepted, will be presented at SIGGRAPH2025)
+(will be presented at SIGGRAPH 2025)
 
 In this paper, we propose a robust and generalizable approach for structured shape modeling, by using local and probabilistic structure rewriting. This approach presents a unified framework for structured reconstruction, completion and generation.
 
