@@ -1,0 +1,19 @@
+# Direct Python dependencies for the public three-stage runtime.
+# See requirements/README.md for the reference CUDA stack and package snapshot.
+numpy==2.5.1
+scipy==1.18.0
+h5py==3.16.0
+einops==0.8.2
+tqdm==4.69.1
+termcolor==3.3.0
+pyhocon==0.3.63
+open3d==0.19.0
+opencv-python-headless==5.0.0.93
+matplotlib==3.11.1
+trimesh==4.12.2
+pyrender==0.1.45
+point-cloud-utils==0.34.0
+PyMCubes==0.1.6
+scikit-image==0.26.0
+GPUtil==1.4.0
+tensorboard==2.21.0

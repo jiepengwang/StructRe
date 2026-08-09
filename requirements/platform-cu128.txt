@@ -1,0 +1,11 @@
+# Pip-installable foundation for the reference Python 3.12 / CUDA 12.8 stack.
+# MinkowskiEngine and PyTorch3D are source-built separately; see README.md.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.9.1+cu128
+torchvision==0.24.1+cu128
+setuptools==83.0.0
+wheel==0.47.0
+ninja==1.13.0
+fvcore==0.1.5.post20221221
+iopath==0.1.10
